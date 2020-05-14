@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Button, FormGroup, FormControl, label} from "react-bootstrap";
 import axios from "axios";
+import Registration from "./Registration";
 //import { Redirect } from 'react-router';
 import {Redirect} from "react-router-dom";
 import Home from "./Home";
@@ -44,6 +45,7 @@ class LogIn extends Component {
 
     render() {
         if (this.state.login) {
+
             return <Home/>;
         }
 
